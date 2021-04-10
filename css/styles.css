@@ -1,0 +1,139 @@
+#main-login {
+  position: relative;
+  text-align: center;
+  background-image: url("../assets/imgs/wave-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+h1 {
+  text-align: center;
+  padding: 2.1rem 0 4rem;
+  font-size: 2.5rem;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.form-group img {
+  border-bottom: 1px solid #c5c5c5;
+  padding-bottom: 2px;
+}
+.form-group .lockdown-icon {
+  padding-right: 7px;
+  padding-bottom: 4px;
+}
+.form-group input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 70%;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-bottom: 1px solid #c5c5c5;
+  padding-bottom: 6px;
+  padding-left: 4px;
+}
+.form-group input::placeholder {
+  color: #7a7a7a;
+  opacity: 0.7;
+  /* Firefox */
+  letter-spacing: 3px;
+}
+.form-group input:focus + .underline {
+  width: 77%;
+}
+.form-group .underline {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #ff9118;
+  transition: 0.5s;
+}
+
+.btn-primary {
+  background-color: #ff9118;
+  width: 58%;
+  margin: 1.8rem 0;
+}
+
+.account-p {
+  font-weight: 600;
+  font-size: 0.63rem;
+}
+.account-p span {
+  color: #ff9118;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-position: cover;
+}
+
+.dog-wrapper {
+  position: absolute;
+  bottom: -5px;
+  right: calc(50% - 15px);
+  transform: translateX(50%);
+  width: 100%;
+  max-width: 300px;
+}
+.dog-wrapper img {
+  width: 80%;
+}
+
+.paw {
+  position: absolute;
+}
+
+.paw-one {
+  left: 0;
+  bottom: 40vh;
+}
+
+.paw-two {
+  right: 0;
+  bottom: 20vh;
+}
+
+@media screen and (min-width: 321px) {
+  .dog-wrapper img {
+    width: 100%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */
