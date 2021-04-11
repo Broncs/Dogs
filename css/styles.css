@@ -63,6 +63,7 @@ h1 {
 .btn-primary {
   background-color: #ff9118;
   width: 58%;
+  font-size: 0.8rem;
   margin: 1.8rem 0;
 }
 
@@ -205,12 +206,49 @@ h1 {
   left: 0;
   right: 0;
 }
-
-.navigation-links {
+.navgation .navigation-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
+  color: white;
+  font-size: 0.8rem;
+}
+.navgation .navigation-links li {
+  display: flex;
+  align-items: center;
+  width: 84px;
+  padding: 1.6px 5px;
+}
+.navgation .navigation-links li small {
+  display: none;
+}
+.navgation .navigation-links li:nth-child(1) {
+  justify-content: flex-start;
+}
+.navgation .navigation-links li:nth-child(2) {
+  justify-content: center;
+}
+.navgation .navigation-links li:nth-child(3) {
+  justify-content: flex-end;
+}
+.navgation .navigation-links li.active-link {
+  background-color: #797979;
+  border-radius: 3px;
+  letter-spacing: 1.2px;
+}
+.navgation .navigation-links li.active-link small {
+  display: block;
+}
+.navgation .navigation-links li.active-link img {
+  -webkit-filter: invert(100%);
+  /* Safari/Chrome */
+  filter: brightness(0) invert(100%);
+  margin-right: 15px;
+}
+.navgation .navigation-links li.active-link .last-icon {
+  margin-right: 0;
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 321px) {
@@ -240,6 +278,11 @@ p {
   color: #313131;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -252,6 +295,7 @@ p {
   color: white;
   font-weight: 600;
   border-radius: 30px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=styles.css.map */

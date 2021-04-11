@@ -75,18 +75,28 @@
       <nav class="navgation">
         <div class="container">
           <ul class="navigation-links">
-            <li>
+            <li class="link active-link" data-info="home">
               <img src="./assets/icons/home-nav.png" alt="home" />
+              <small class="home active-link-home">home</small>
             </li>
-            <li>
+
+            <li class="link" data-info="notif">
               <img src="./assets/icons/bell-nav.png" alt="notification" />
+              <small class="notif active-link-notif">notif</small>
             </li>
-            <li>
-              <img src="./assets/icons/settings-nav.png" alt="settings" />
+
+            <li class="link" data-info="config">
+              <small class="config active-link-config">config</small>
+              <img
+                class="last-icon"
+                src="./assets/icons/settings-nav.png"
+                alt="settings"
+              />
             </li>
           </ul>
         </div>
       </nav>
     </main>
+    <script src="/js/home.js"></script>
   </body>
 </html>
