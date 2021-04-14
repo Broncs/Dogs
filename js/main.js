@@ -20,7 +20,7 @@ loginButton.addEventListener('click', function (e) {
     +password.value === account1.password
   ) {
     console.log('login!!');
-    window.location.href = 'home.html';
+    window.location.href = './pages/home.html';
   } else {
     alert(`username: john 
       senha: 123456
