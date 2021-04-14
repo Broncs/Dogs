@@ -45,6 +45,9 @@ h1 {
   /* Firefox */
   letter-spacing: 3px;
 }
+.form-group input:focus {
+  background-color: transparent;
+}
 .form-group input:focus + .underline {
   width: 77%;
 }
@@ -320,6 +323,9 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.status-wrapper-medical small span {
+  color: #ff9118;
 }
 
 .dot::before {

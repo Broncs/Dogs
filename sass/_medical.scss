@@ -16,6 +16,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  small span {
+    color: $primary-color;
+  }
 }
 .dot::before {
   content: '';
