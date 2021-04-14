@@ -258,6 +258,7 @@ h1 {
 }
 .profile-wrapper-detail {
   padding: 1.2rem 0 0.5rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 .profile-wrapper-detail div {
@@ -299,6 +300,96 @@ h1 {
 @media screen and (min-width: 321px) {
   .profile-wrapper-detail .profile-dog-img {
     width: auto;
+  }
+}
+.main-medical {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.status-wrapper-medical {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1.3rem 0.9rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #313131;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dot::before {
+  content: "";
+  height: 3px;
+  width: 3px;
+  background-color: #ff9118;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 15px;
+  position: absolute;
+  left: -15px;
+  top: -21px;
+}
+
+.dot {
+  height: 3px;
+  width: 3px;
+  right: 3px;
+  background-color: #ff9118;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.dot::after {
+  content: "";
+  height: 3px;
+  width: 3px;
+  background-color: #ff9118;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 15px;
+  position: absolute;
+  left: -15px;
+  top: -9px;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+}
+.pill img {
+  margin-right: 13px;
+}
+
+.call-doctor {
+  background-color: #ff9118;
+  padding: 1rem 0;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.call-doctor .btn-outline {
+  background-color: white;
+  color: #ff9118;
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding: 0.5rem 3.5rem;
+}
+
+@media screen and (min-width: 321px) {
+  .status-wrapper-medical {
+    margin-bottom: 2rem;
+  }
+
+  .call-doctor {
+    padding: 1.3rem 0;
   }
 }
 * {
