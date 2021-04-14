@@ -182,14 +182,14 @@ h1 {
   transform: translateY(-50%);
 }
 .details-wrapper .detail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #313131;
-  padding: 2.6rem 1rem;
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
+}
+.details-wrapper .detail .link-a {
+  display: block;
+  padding: 2.6rem 1rem;
 }
 .details-wrapper .detail-orange {
   background-color: #ff9118;
