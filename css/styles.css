@@ -82,7 +82,6 @@ h1 {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  background-position: cover;
 }
 
 .dog-wrapper {
@@ -396,6 +395,96 @@ h1 {
 
   .call-doctor {
     padding: 1.3rem 0;
+  }
+}
+.main-schedule {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.title-schedule {
+  margin-bottom: 2rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.card-wrapper .card {
+  background-color: #ff9118;
+  text-align: center;
+  padding: 11px 15px;
+  max-width: 90px;
+  border-radius: 10px;
+  margin-bottom: 34px;
+  letter-spacing: 0.165em;
+}
+.card-wrapper .card div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #313131;
+  width: 42px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 auto 10px;
+}
+.card-wrapper .card p {
+  font-size: 0.6rem;
+  color: white;
+}
+.card-wrapper .card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.dog-wrapper-schedule {
+  bottom: -42px;
+  right: 60px;
+}
+.dog-wrapper-schedule img {
+  width: 80%;
+}
+
+.rectangle {
+  position: absolute;
+  z-index: -1;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+}
+
+.home-nav {
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+  -webkit-filter: invert(100%);
+  /* Safari/Chrome */
+  filter: brightness(0) invert(100%);
+}
+
+@media screen and (min-width: 321px) {
+  .card {
+    max-width: 94px;
+  }
+
+  .dog-wrapper-schedule {
+    bottom: -42px;
+    right: 140px;
+  }
+  .dog-wrapper-schedule img {
+    width: 110%;
+  }
+
+  .rectangle {
+    bottom: -20px;
+    width: 100%;
   }
 }
 * {
