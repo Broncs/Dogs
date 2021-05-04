@@ -15,4 +15,4 @@ voce pode conferir o resultado aqui: [Link](https://dogs-challenge-gomes.netlify
 ![image](https://user-images.githubusercontent.com/62390902/115255062-4be25f80-a104-11eb-9ba8-a701360a16e6.png)
 
 ## 📝 Tecnologias
-html sass
+html sass js
